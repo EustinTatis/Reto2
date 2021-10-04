@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Reto 2</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styledcm.css" />
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mensajes.js"></script>
+  </head>
+
+  <body>
+    <h2>Registro de mensajes</h2>
+
+    <fieldset>
+      <legend>Llene los campos correctamente</legend>
+      <input type="number" id="id" placeholder="ID" disabled="disabled" /><br /><br />
+      <textarea type="text" id="mensajes" placeholder="MENSAJE" rows="10" cols="40"></textarea> <br /><br />
+
+      <button class="btn" onclick="guardar()">GUARDAR</button>
+      <button class="btn" onclick="traerInformacion()">CONSULTAR</button>
+      <button class="btn" onclick="actualizar()">ACTUALIZAR</button>
+    </fieldset>
+    <div>
+      <br />
+      <table>
+        <thead>
+            <th>ID</th>
+            <th>MENSAJE</th>
+          </thead>
+        <tbody id="miResultado"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

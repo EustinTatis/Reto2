@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Reto2</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styledcm.css" />
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/doctores.js"></script>
+  </head>
+
+  <body>
+    <h2>Creación de doctores</h2>
+
+    <fieldset>
+      <legend>Llene los campos correctamente</legend>
+      <input type="number" id="id" placeholder="ID" disabled="disabled" />
+      <br />
+      <br />
+      <input type="text" id="especialidad" placeholder="ESPECIALIDAD" /> <br />
+      <br />
+      <input type="number" id="graduacion" placeholder="AÑO DE GRADUACIÓN" />
+      <br />
+      <br />
+      <input type="number" id="departamento" placeholder="ID DEPARTAMENTO" />
+      <br />
+      <br />
+      <input type="text" id="nombre" placeholder="NOMBRE" /> <br />
+      <br />
+
+      <button class="btn" onclick="guardar()">GUARDAR</button>
+      <button class="btn" onclick="traerInformacion()">CONSULTAR</button>
+      <button class="btn" onclick="actualizar()">ACTUALIZAR</button>
+    </fieldset>
+
+    <div>
+      <br />
+      <table>
+        <thead>
+            <th>ID</th>
+            <th>ESPECIALIDAD</th>
+            <th>AÑO DE GRADUACIÓN</th>
+            <th>ID DEPARTAMENTO</th>
+            <th>NOMBRE</th>
+          </thead>
+        <tbody id="miResultado"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

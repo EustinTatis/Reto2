@@ -1,0 +1,41 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding:15px;
+}
+
+th{
+    background-color:rgb(196, 195, 197);
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+fieldset{
+    width: 30%;
+    margin-left: 34%;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color:rgb(184, 182, 182);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px; 
+    margin-left: 20px;
+}
+
+input{
+    width: 50%;
+    height: 20px;
+    margin-left:90px;
+}
+
+textarea{
+    margin-left:35px;
+}
